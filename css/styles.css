@@ -647,9 +647,9 @@ img {
 }
 
 /*==================== SERVICES ====================*/
-/* .services__container {
+.services__container {
   gap: 1.5rem;
-} */
+}
 
 .services__content {
   position: relative;
@@ -759,6 +759,24 @@ img {
   width: 100%;
   height: auto;
   border-radius: .5rem;
+}
+
+.portfolio__container__fyp{
+  width: 370px;
+  height: 330px;
+  justify-self: center;
+}
+
+.portfolio__container__ase{
+  width: 330px;
+  height: 300px;
+  justify-self: center;
+}
+
+.portfolio__container__timer{
+  width: 360px;
+  height: 300px;
+  justify-self: center;
 }
 
 .portfolio__container__img{
