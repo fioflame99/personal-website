@@ -654,11 +654,12 @@ img {
 .services__content {
   position: relative;
   background-color: var(--container-color);
-  padding: 3.5rem .5rem 1.25rem 1.5rem;
+  padding: 1.5rem 1.5rem 1.25rem 1.5rem;
   border-radius: .25rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   transition: .3s;
   overflow: hidden;
+  
 }
 
 .services__content:hover {
@@ -685,6 +686,14 @@ img {
 }
 
 .services__button:hover .button__icon {
+  transform: translateX(0.25rem);
+}
+.certs__button {
+  cursor: pointer;
+  font-size: var(--medium-font-size);
+}
+
+.certs__button:hover .button__icon {
   transform: translateX(0.25rem);
 }
 
@@ -1181,6 +1190,10 @@ img {
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .services__container{
+    grid-template-columns: repeat(2, 1fr);
+  }
   .qualification__sections {
     display: grid;
     grid-template-columns: .6fr;
@@ -1356,4 +1369,75 @@ img {
   .contact__inputs {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.software-skill-inline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the icons in the container */
+  gap: 20px; /* Add some space between icons */
+  padding: 20px;
+}
+
+/* Individual Skill */
+.skill {
+  display: flex;
+  flex-direction: column; /* Stack icon and text vertically */
+  align-items: center; /* Center align the content */
+  font-size: 1rem; /* Adjust size as necessary */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.skill i {
+  font-size: 2.8em; /* Larger icons */
+  color: hsl(248, 61%, 69%); /* Icon color - change as needed */
+  margin-bottom: 0.5rem; /* Space between icon and text */
+}
+
+
+.skill p {
+  margin: 0; /* Remove default paragraph margins */
+  text-align: center; /* Center text */
+  color: hsl(248, 61%, 69%);
+}
+
+.skill:hover i {
+  color: var(--first-color-alt); /* Replace #yourColorHere with the color you want on hover */
+  transform: scale(1.1); /* Makes the icon slightly larger */
+}
+
+/* Hover effect for the text */
+.skill:hover p {
+  color: var(--first-color-alt); /* Replace #yourColorHere with the color you want on hover */
+}
+
+
+.achievement-cards-div {
+  grid-gap: 1rem 1rem;
+  display: grid;
+  gap: 1rem 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.certificate-card {
+  background-color: #fff;
+  border: 1px solid hsla(0, 0%, 83%, .397);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px -15px #0003;
+  padding: 1.5rem;
+  transition: all .3s ease;
+}
+.certificate-image-div {
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+.certificate-detail-div {
+  text-align: center;
+}
+.card-image {
+  height: auto;
+  max-width: 100%;
+  width: 250px;
 }
